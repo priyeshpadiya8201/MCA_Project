@@ -1,0 +1,206 @@
+/* a
+{
+    text-decoration: none;
+} */
+
+/* #space1{
+  background-color:#001d23;
+  color:#001d23;
+  height: 50%;
+  margin-top: 20%;
+} */
+.container10 {
+    margin-top: 5%;
+    
+    width: 100%;
+    padding: 0 10px; /* Add padding to the sides for better spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+}
+
+.rowshop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    margin-left: -10px; /* Remove margin added by container10 padding */
+    margin-right: -10px; /* Remove margin added by container10 padding */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* Show three cards per row by default */
+    margin: 0 10px 20px; /* Add margin to create spacing between cards */
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+}
+
+@media only screen and (max-width: 749px) {
+    /* For screens below 749px */
+    .rowshop {
+        flex-direction: column; /* Change direction to column */
+        align-items: center; /* Center cards vertically */
+    }
+
+    .card {
+        width: calc(100% - 20px); /* Show one card per row */
+    }
+}
+
+
+/* 
+#btnshop
+{
+    flex:1 1 15rem;
+    width: 50%;
+    display: flex;
+    align-self: normal;
+    margin: 10px 20px;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    
+}  */
+#btnshop img{
+    max-width: 200px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#btnshop h4
+{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#btnshop p{
+    margin-bottom: 10px;
+}
+#btnshop .btn{
+    display: inline-block;
+    margin-top: auto;
+    background: orangered;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+#btnshop .price{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 0 0;
+}
+
+
+/* .card:nth-child(odd) {
+    clear: both;
+} */
+/* 
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#search-results {
+    text-align: center;
+} */
+
+.page-header {
+
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../shamballa/240_F_641575261_pWTWvfmALmcPD3devSdasUgcwvJkfg6j.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+  }
+  .index-category
+{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p
+{
+    color: #111;
+    text-align: center;
+    padding-bottom:40px;
+    flex-basis:100%;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.index-category-box:nth-child(2)
+{
+    background-image:url(3.jpg);
+    
+}
+.index-category-box:nth-child(3)
+{
+    background-image:url(3.jpg);
+  
+}
+.index-category-box:nth-child(4)
+{
+    background-image:url(3.jpg);
+    
+}
+.index-category-box:nth-child(5)
+{
+    background-image:url(3.jpg);
+    
+}
+.dark-over{
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+.index-category-box:hover .dark-over{
+    opacity: 0;
+}
+.index-category-box h3{
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100;
+    border-style: none;
+}
+
+
+

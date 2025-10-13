@@ -1,0 +1,4 @@
+Order Reference: ORD-F7F57F6B
+Products: newproduct (x1)
+Grand Total: ₹100
+Payment Method: Debit Card

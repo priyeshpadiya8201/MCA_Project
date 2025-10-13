@@ -1,0 +1,216 @@
+  #bdt {
+    background-color: #e0f2f1; /* Light blue */
+  }
+
+  .input-box {
+    position: relative;
+    height: 50px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    /* margin: 0 20px; */
+    margin-top: 3%;
+    margin-left: 5%;
+    align-items: center;
+    border-radius: 8px;
+    border: 10px bold;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+    border-style:solid;
+    border-color: darkolivegreen;
+    
+  }
+
+  .input-box i,
+  .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input-box i {
+    left: 30px;
+    font-size: 30px;
+    color: #707070;
+  }
+  .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+
+  .input-box .button {
+    right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    
+    padding: 12px 30px;
+    margin-top: 1px;
+    border-radius: 50px;
+    background-color: darkolivegreen;
+    cursor: pointer;
+  }
+  .input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+
+  /* Responsive searchbar*/
+  @media screen and (max-width: 500px) {
+    .input-box {
+      height: 66px;
+      margin: 0 8px;
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+
+
+  /* cards */
+
+
+  .cardst{
+    margin-top: -6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    padding: 80px;
+    grid-gap: 60px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    /* flex-wrap: wrap; */
+    
+  }
+  #cd1
+  {
+    /* max-height: 400px; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.40);
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    /* align-self: normal;
+    flex-direction: column; */
+  }
+
+  #cd1:hover {
+    transform: translateY(-30px);
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  .container1{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    
+  }
+
+  #img12{
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    border-radius: 20px 20px 0 0;
+  }
+  .container1:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+  }
+  /* .card1>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+  }
+  .card2>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #2bdce3,
+        #42ffdb
+    );
+  }
+  .card3>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+  } */
+  .details{
+    padding: 20px 10px;
+  }
+  .details>h3{
+    /* display: inline-block; */
+    margin-top: auto;
+    color: #a0a0a0;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+  }
+  .details>p{
+    /* flex-direction: column; */
+    /* display: inline-block; */
+    /* margin-top: auto; */
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  #rd{
+    color: blue;
+    text-align: right;
+    margin-left: 70%;
+  }
+
+  @media screen and (max-width: 500px){
+    .cardst{
+
+      margin-left: -75px;
+      margin-right: 200px;
+      
+    }
+  }
+
+  .page-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../shamballa/1000_F_524567517_W8dieXpC1Q1KpitBYZliOecNKXsKefAS.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+  }
+  .pagesno{
+    background-color: orangered; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  #tppages {
+    text-align: center; /* Center the content horizontally */
+  }

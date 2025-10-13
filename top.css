@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: josefin-sans,sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3vh;
+    z-index: 99;
+    padding-top: -120px;
+    margin-top: -40px;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-bottom: -70px;
+    /* background-color: whitesmoke; */
+    background-color: #2d2e33;
+    
+
+}
+
+#chk1{
+    display: none;
+
+}
+
+#navimg{
+    flex: 0;
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    left: -190px;
+    bottom: -10px;
+    
+    
+}
+/* span{
+    color: orangered;
+
+
+} */
+nav ul{
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+    /* display: inline-block;*/
+    padding: -10px 5px;
+    padding-top: 40px; 
+}
+nav ul li a{
+    color: orangered;
+    text-decoration: none;
+    font-weight:bold ;
+    padding: 10px 15px;
+
+}
+nav ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+    
+}
+button{
+    border: none;
+    background:orangered ;
+    padding: 12px 30px;
+    margin-top: -10px;
+     border-radius: 20px;
+     color:white;
+     font-weight:bold ;
+     font-size: 15px ;
+     transition: .4s;
+     
+}
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+nav .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+
+/* @media(max-width:1024px)
+{
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3vh;
+        padding-top: -120px;
+        margin-top: -40px;
+        padding-left: 15%;
+        padding-right: 10%;
+        padding-bottom: -70px;
+        background-color: black;
+    } 
+
+    
+} */
+@media(max-width:1250px){
+   
+    nav ul{
+        position: absolute;
+        top:145px;
+        right: -100%;
+        background: #2d2e33;
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    
+    nav .menu{
+        color: orangered;
+        margin-top: 30px;
+        margin-right: -60px;
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+  
+}
